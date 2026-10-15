@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracking Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="dashboard">
+
+    <section class="profile-card">
+      <div class="profile-info">
+        <img
+          src="jeremy.png"
+          alt="Jeremy Robson"
+          class="avatar"
+        >
+
+        <div class="profile-text">
+          <p class="report-label">Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+
+      <nav class="period-nav" aria-label="Select reporting period">
+        <button type="button" data-period="daily">Daily</button>
+        <button type="button" data-period="weekly" class="active"
+          aria-pressed="true">Weekly</button>
+        <button type="button" data-period="monthly">Monthly</button>
+      </nav>
+    </section>
+
+    <section class="activities" aria-label="Activity time tracking">
+
+      <article class="activity work">
+        <div class="activity-icon" aria-hidden="true">▰</div>
+        <div class="activity-content">
+          <div class="activity-heading">
+            <h2>Work</h2>
+            <button class="more" type="button" aria-label="Work options">•••</button>
+          </div>
+          <p class="hours" data-daily="5hrs" data-weekly="32hrs"
+            data-monthly="103hrs">32hrs</p>
+          <p class="previous" data-daily="Last Day - 7hrs"
+            data-weekly="Last Week - 36hrs"
+            data-monthly="Last Month - 128hrs">Last Week - 36hrs</p>
+        </div>
+      </article>
+
+      <article class="activity play">
+        <div class="activity-icon" aria-hidden="true">◆</div>
+        <div class="activity-content">
+          <div class="activity-heading">
+            <h2>Play</h2>
+            <button class="more" type="button" aria-label="Play options">•••</button>
+          </div>
+          <p class="hours" data-daily="1hr" data-weekly="10hrs"
+            data-monthly="23hrs">10hrs</p>
+          <p class="previous" data-daily="Last Day - 2hrs"
+            data-weekly="Last Week - 8hrs"
+            data-monthly="Last Month - 29hrs">Last Week - 8hrs</p>
+        </div>
+      </article>
+
+      <article class="activity study">
+        <div class="activity-icon" aria-hidden="true">▧</div>
+        <div class="activity-content">
+          <div class="activity-heading">
+            <h2>Study</h2>
+            <button class="more" type="button" aria-label="Study options">•••</button>
+          </div>
+          <p class="hours" data-daily="0hrs" data-weekly="4hrs"
+            data-monthly="13hrs">4hrs</p>
+          <p class="previous" data-daily="Last Day - 1hr"
+            data-weekly="Last Week - 7hrs"
+            data-monthly="Last Month - 19hrs">Last Week - 7hrs</p>
+        </div>
+      </article>
+
+      <article class="activity exercise">
+        <div class="activity-icon" aria-hidden="true">⚒</div>
+        <div class="activity-content">
+          <div class="activity-heading">
+            <h2>Exercise</h2>
+            <button class="more" type="button" aria-label="Exercise options">•••</button>
+          </div>
+          <p class="hours" data-daily="1hr" data-weekly="4hrs"
+            data-monthly="11hrs">4hrs</p>
+          <p class="previous" data-daily="Last Day - 1hr"
+            data-weekly="Last Week - 5hrs"
+            data-monthly="Last Month - 18hrs">Last Week - 5hrs</p>
+        </div>
+      </article>
+
+      <article class="activity social">
+        <div class="activity-icon" aria-hidden="true">♟</div>
+        <div class="activity-content">
+          <div class="activity-heading">
+            <h2>Social</h2>
+            <button class="more" type="button" aria-label="Social options">•••</button>
+          </div>
+          <p class="hours" data-daily="1hr" data-weekly="5hrs"
+            data-monthly="21hrs">5hrs</p>
+          <p class="previous" data-daily="Last Day - 3hrs"
+            data-weekly="Last Week - 10hrs"
+            data-monthly="Last Month - 23hrs">Last Week - 10hrs</p>
+        </div>
+      </article>
+
+      <article class="activity self-care">
+        <div class="activity-icon" aria-hidden="true">✖</div>
+        <div class="activity-content">
+          <div class="activity-heading">
+            <h2>Self Care</h2>
+            <button class="more" type="button" aria-label="Self Care options">•••</button>
+          </div>
+          <p class="hours" data-daily="0hrs" data-weekly="2hrs"
+            data-monthly="7hrs">2hrs</p>
+          <p class="previous" data-daily="Last Day - 1hr"
+            data-weekly="Last Week - 2hrs"
+            data-monthly="Last Month - 11hrs">Last Week - 2hrs</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
